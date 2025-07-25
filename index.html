@@ -4,16 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>buzz-team-library</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section class="banner">
-        <div  class="banner">
+        <div class="banner__desc hidden">
+            <svg class="icon" width="667" height="70">
+                <use xlink:href="./img/icon.sprite.svg#lk"></use>
+            </svg>
+        </div>
+
+        <div class="banner__logo">
             <svg class="icon" width="952" height="281">
               <use xlink:href="./img/icon.sprite.svg#logo"></use>
             </svg>
         </div>
 
-        <button class="banner__button">Запустить анимацию</button>
+        <button class="banner__button" id="main-button">Запустить<br>анимацию</button>
+
+        <div class="banner__steps">
+            <div class="banner__step banner__step-first hidden">
+                <div class="banner__step-text">Регистрация</div>
+                <div class="banner__step-icon">
+                    <svg class="icon" width="407" height="292" >
+                        <use xlink:href="./img/icon.sprite.svg#step-first"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="banner__step banner__step-second hidden">
+                <div class="banner__step-text">Заведение<br>площадки</div>
+                <div class="banner__step-icon">
+                    <svg class="icon"  width="307" height="280">
+                        <use xlink:href="./img/icon.sprite.svg#step-second"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="banner__step banner__step-third hidden">
+                <div class="banner__step-text">Единый код</div>
+                <div class="banner__step-icon">
+                    <svg class="icon" width="368" height="300" >
+                        <use xlink:href="./img/icon.sprite.svg#step-third"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="banner__step banner__step-forth hidden">
+                <div class="banner__step-text">Единая<br>аналитика</div>
+                <div class="banner__step-icon">
+                    <svg class="icon" width="340" height="292" >
+                        <use xlink:href="./img/icon.sprite.svg#step-forth"></use>
+                    </svg>
+                </div>
+            </div>
+    </div>
+        <div class="banner__slide hidden">
+            <p class="slide__text">Инструмент управления рекламой, как для экосистемных приложений, так и для прямых паблишеров.</p>
+            <div class="banner__imagebox">
+                <img src="img/laptop.webp" alt="Ноутбук" class="banner__image">
+            </div>
+        </div>
     </section>
+
+    <script src="./script.js"></script>
 </body>
 </html>
