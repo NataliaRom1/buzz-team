@@ -1,0 +1,11 @@
+.banner {
+    max-width: 1080px;
+    max-height: 1920px;
+    aspect-ratio: 9 / 16;
+    background-color: #000;
+    padding: 64px;
+}
+
+.banner__button {
+
+}
