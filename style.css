@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('./fonts/OpenSans-Bold.woff') format('woff'),
+        url('./fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -58,128 +67,218 @@ body {
 }
 
 .banner {
-    font-family: 'OpenSans';
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
     max-width: 1080px;
     max-height: 1920px;
     aspect-ratio: 9 / 16;
     background-color: #000;
-    padding: 64px;
+    padding: 3% 2.2% 3.30%;
     margin: auto;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
-    width: 100vw;
-    height: 100vh;
-    padding: 5vw;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
 }
 
 .icon {
     max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     display: block;
 }
 
 .banner__desc {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility .3s ease, opacity .3s ease;
+    opacity: 0;
+    margin-bottom: 4%;
+    min-height: 1.75em;
+    height: 4%;
+    width: 100%;
+    transition: opacity .3s ease;
+}
+
+.banner__desc-second {
+    .icon {
+        max-width: 70%;
+    }
+}
+
+.banner__desc-third {
+    .icon {
+        max-width: 34%;
+    }
 }
 
 .banner__logo {
     max-height: 291px;
+    display: flex;
+    justify-content: center;
+    height: 17%;
+    width: 100%;
 }
 
 .banner__button {
     background-color: #F50;
     color: #FFF;
-    padding: 40px 29px 39px;
-    font-size: 80px;
-    line-height: 95px;
-    font-weight: bold;
+    padding: 5% 14.5% 3%;
+    font-family: inherit;
+    font-size: 2em;
+    line-height: 119%;
+    border-radius: .6em;
+    margin: 49.5% auto 0;
     text-transform: uppercase;
-    border-radius: 24px;
-    margin: auto;
-    visibility: visible;
     opacity: 1;
+    cursor: pointer;
     transition: visibility .3s ease, opacity .3s ease;
 }
 
 .banner__steps {
-    height: 100%;
+    min-height: calc(100% - 9.8em);
     width: 100%;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 28% 29% 46%;
 }
 
 .banner__step {
-    position: absolute;
+    /* position: absolute; */
+    opacity: 0;
 }
 
 .banner__step-text {
-    font-size: 40px;
-    line-height: 45px;
-    font-weight: bold;
+    font-size: 1em;
+    line-height: 113%;
     text-transform: uppercase;
     color: #FFF;
+    margin-bottom: 9%;
+    text-align: center;
+}
+
+.banner__step-icon {
+    height: 100%;
+    width: 100%;
 }
 
 .banner__step-first {
-    left: 0;
-    top: 0;
+    justify-self: flex-start;
+    align-self: end;
+    width: 119%;
+    height: 75%;
+    position: relative;
+    bottom: -2%;
+
+    .banner__step-icon {
+        position: relative;
+        left: -2%;
+    }
 }
 
 .banner__step-second {
-    right: 0;
-    top: 0;
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: end;
+    align-items: end;
+    height: 76%;
+    width: 98%;
+    position: relative;
+    top: -17%;
+    right: -1%;
 }
 
 .banner__step-third {
-    left: 0;
-    bottom: 0;
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+    position: relative;
+    left: -2%;
 }
 
-.banner__step-second {
-    right: 0;
-    bottom: 0;
+.banner__step-forth {
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: end;
+    align-self: center;
+    height: 47%;
+    width: 116%;
+    position: relative;
+    left: -2%;
+}
+
+.banner__step-first-arrow {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    align-self: end;
+    position: relative;
+    bottom: -26%;
+    width: 76%;
+    height: 36%;
+}
+
+.banner__step-second-arrow {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: end;
+    height: 27%;
+    width: 58%;
+    position: relative;
+    bottom: -15%;
+    left: -4%;
+}
+
+.banner__step-third-arrow {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+    width: 63%;
+    height: 19%;
+    padding-top: 36px;
 }
 
 .banner__slide {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 173px;
 }
 
 .banner__text {
-    font-size: 55px;
-    line-height: 60px;
-    font-weight: bold;
+    font-size: 1.375em;
+    line-height: 109%;
     text-align: end;
     color: #FFF;
+    max-width: 88%;
+    margin: 16.5% 0 3.5% auto;
 }
 
-.slide__imagebox {
-    width: 1000px;
-    height: 650px;
+.banner__imagebox {
+    max-width: 941px;
+    max-height: 831px;
+    position: relative;
+    right: -8%;
+    bottom: -4%;
+    aspect-ratio: 1.133;
 }
 
-.slide__image {
+.banner__image {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.hidden {
-    visibility: hidden;
-    opacity: 0;
+.d-none {
+    display: none;
 }
 
 .fade-in {
-    animation: fadeIn 0.5s ease forwards;
+    animation: fadeIn .5s ease forwards;
 }
 
 .fade-out {
-    animation: fadeOut 0.5s ease forwards;
+    animation: fadeOut .5s ease forwards;
 }
 
 .slide-animate-in {
@@ -188,4 +287,28 @@ body {
 
 .slide-animate-out {
     animation: slideOutToRight 1s ease forwards;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        font-size: 20px;
+    }
+    
+    .banner__button {
+        margin: 31.5% auto 0;
+    }
+
+    .banner__step-text {
+        margin-bottom: 3%;
+    }
+
+    .banner__desc {
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner__button {
+        font-size: .6em;
+    }
 }
