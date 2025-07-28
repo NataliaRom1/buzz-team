@@ -21,7 +21,7 @@ function startCycle() {
   stepsWrapper.classList.remove('d-none');
   desc2.classList.remove('d-none');
   desc2.classList.add('fade-in');
-  
+
   // === Появление шагов по очереди ===
   steps.forEach((step, index) => {
     setTimeout(() => {
@@ -30,10 +30,8 @@ function startCycle() {
     }, index * 750);
   });
 
-  return
-
   // === Скрыть шаги одновременно + показать слайд ===
-  setTimeout(() => { 
+  setTimeout(() => {
     steps.forEach((step) => {
       // step.classList.remove('fade-in');
       step.classList.add('fade-out');
@@ -53,7 +51,7 @@ function startCycle() {
       slide.classList.add('slide-animate-in');
     }, 500);
   }, 5000);
-  // return
+
   // === Через 2s после показа слайда — скрыть слайд и повторить ===
   setTimeout(() => {
     slide.classList.add('slide-animate-out');
@@ -70,14 +68,14 @@ function startCycle() {
 
 
 button.addEventListener('click', () => {
-    button.classList.add('fade-out');
+  button.classList.add('fade-out');
 
-    // стартуем цикл
-    setTimeout(() => {
-      button.classList.add('d-none');
-      stepsWrapper.classList.remove('d-none');
-      desc2.classList.remove('d-none');
+  // стартуем цикл
+  setTimeout(() => {
+    button.classList.add('d-none');
+    stepsWrapper.classList.remove('d-none');
+    desc2.classList.remove('d-none');
 
-      startCycle();
-    }, 300);
+    startCycle();
+  }, 300);
 });

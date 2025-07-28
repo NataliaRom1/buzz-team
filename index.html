@@ -10,94 +10,112 @@
 
 <body>
     <section class="banner">
-
-        <div class="banner__desc banner__desc-second">
-            <svg class="icon">
-                <use xlink:href="./img/icon.sprite.svg#lk"></use>
-            </svg>
-        </div>
-
-        <div class="banner__desc banner__desc-third d-none">
-            <svg class="icon">
-                <use xlink:href="./img/icon.sprite.svg#ads-manager"></use>
-            </svg>
-        </div>
-
-        <div class="banner__logo">
-            <svg class="icon">
-                <use xlink:href="./img/icon.sprite.svg#logo"></use>
-            </svg>
-        </div>
-        <button class="banner__button" id="main-button">Запустить<br>анимацию</button>
-
-        <div class="banner__steps d-none">
-            <div class="banner__step banner__step-first">
-                <div class="banner__step-text">Регистрация</div>
-                <div class="banner__step-icon">
+        <div class="banner__container">
+            <div class="banner__top">
+                <div class="banner__desc banner__desc-second">
                     <svg class="icon">
-                        <use xlink:href="./img/icon.sprite.svg#step-first"></use>
+                        <use xlink:href="./img/icon.sprite.svg#lk"></use>
+                    </svg>
+                </div>
+
+                <div class="banner__desc banner__desc-third d-none">
+                    <svg class="icon">
+                        <use xlink:href="./img/icon.sprite.svg#ads-manager"></use>
+                    </svg>
+                </div>
+
+                <div class="banner__logo">
+                    <svg class="icon">
+                        <use xlink:href="./img/icon.sprite.svg#logo"></use>
                     </svg>
                 </div>
             </div>
+            <button class="banner__button" id="main-button">Запустить<br>анимацию</button>
 
-            <div class="banner__step banner__step-first-arrow">
-                <div class="banner__step-icon">
-                    <svg class="icon">
-                        <use xlink:href="./img/icon.sprite.svg#arrow-1"></use>
-                    </svg>
+            <div class="banner__steps d-none">
+                <div class="banner__step banner__step-first">
+                    <div class="banner__step-wrapper">
+                        <div class="banner__step-text">Регистрация</div>
+                        <div class="banner__step-icon">
+                            <svg class="icon">
+                                <use xlink:href="./img/icon.sprite.svg#step-first"></use>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="banner__step banner__step-second">
-                <div class="banner__step-text">Заведение<br>площадки</div>
-                <div class="banner__step-icon">
-                    <svg class="icon">
-                        <use xlink:href="./img/icon.sprite.svg#step-second"></use>
-                    </svg>
+                <div class="banner__step banner__arrow  banner__step-first-arrow">
+                    <div class="banner__step-wrapper">
+                        <div class="banner__step-icon">
+                            <svg class="icon">
+                                <use xlink:href="./img/icon.sprite.svg#arrow-1"></use>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="banner__step banner__step-second-arrow">
-                <div class="banner__step-icon">
-                    <svg class="icon">
-                        <use xlink:href="./img/icon.sprite.svg#arrow-2"></use>
-                    </svg>
+                <div class="banner__step banner__step-second">
+                    <div class="banner__step-wrapper">
+                        <div class="banner__step-text">Заведение<br>площадки</div>
+                        <div class="banner__step-icon">
+                            <svg class="icon">
+                                <use xlink:href="./img/icon.sprite.svg#step-second"></use>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="banner__step banner__step-third">
-                <div class="banner__step-text">Единый код</div>
-                <div class="banner__step-icon">
-                    <!-- <svg class="icon" width="346" height="303" >
+                <div class="banner__step banner__arrow  banner__step-second-arrow">
+                    <div class="banner__step-wrapper">
+                        <div class="banner__step-icon">
+                            <svg class="icon">
+                                <use xlink:href="./img/icon.sprite.svg#arrow-2"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner__step banner__step-third">
+                    <div class="banner__step-wrapper">
+                        <div class="banner__step-text">Единый код</div>
+                        <div class="banner__step-icon">
+                            <!-- <svg class="icon" width="346" height="303" >
                         <use xlink:href="./img/icon.sprite.svg#step-third"></use>
                     </svg> -->
-                    <img src="./img/step-3.svg" />
+                            <img src="./img/step-3.svg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner__step banner__arrow banner__step-third-arrow">
+                    <div class="banner__step-wrapper">
+                        <div class="banner__step-icon">
+                            <svg class="icon">
+                                <use xlink:href="./img/icon.sprite.svg#arrow-3"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner__step banner__step-forth">
+                    <div class="banner__step-wrapper">
+                        <div class="banner__step-text">Единая<br>аналитика</div>
+                        <div class="banner__step-icon">
+                            <svg class="icon">
+                                <use xlink:href="./img/icon.sprite.svg#step-forth"></use>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="banner__step banner__step-third-arrow">
-                <div class="banner__step-icon">
-                    <svg class="icon">
-                        <use xlink:href="./img/icon.sprite.svg#arrow-3"></use>
-                    </svg>
+            <div class="banner__slide d-none">
+                <p class="banner__text">Инструмент управления рекламой, как для экосистемных приложений, так и для
+                    прямых
+                    паблишеров.</p>
+                <div class="banner__imagebox">
+                    <img src="img/laptop.webp" alt="Ноутбук" class="banner__image">
                 </div>
-            </div>
-
-            <div class="banner__step banner__step-forth">
-                <div class="banner__step-text">Единая<br>аналитика</div>
-                <div class="banner__step-icon">
-                    <svg class="icon">
-                        <use xlink:href="./img/icon.sprite.svg#step-forth"></use>
-                    </svg>
-                </div>
-            </div>
-        </div>
-
-        <div class="banner__slide d-none">
-            <p class="banner__text">Инструмент управления рекламой, как для экосистемных приложений, так и для прямых
-                паблишеров.</p>
-            <div class="banner__imagebox">
-                <img src="img/laptop.webp" alt="Ноутбук" class="banner__image">
             </div>
         </div>
     </section>
